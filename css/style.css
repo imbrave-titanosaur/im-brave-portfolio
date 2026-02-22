@@ -430,11 +430,11 @@ body {
     gap: 10px;
 }
 
-.submit-btn:hover {
+/* .submit-btn:hover {
     background: var(--white);
     transform: translateY(-2px);
     box-shadow: 0 8px 30px var(--gold-glow);
-}
+} */
 
 /* =====================
    SECTION COMMONS
