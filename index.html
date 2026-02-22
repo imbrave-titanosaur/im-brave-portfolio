@@ -3,11 +3,530 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Let's Practice</title>
+    <title>IMBRAVE — Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>
-        Hello World!
-    </h1>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <div class="wrapper">
+        <div class="navbar">
+            <div class="logo-img">
+                <div class="logo-icon">IB</div>
+                <span>IM<b>BRAVE</b></span>
+            </div>
+            <nav class="navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact Me</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact Me</a>
+    </div>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-tag">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+                Available for freelance work
+            </div>
+            <h1>
+                <span class="line">Creative</span>
+                <span class="line"><span class="gold">Developer</span> &</span>
+                <span class="line">Designer.</span>
+            </h1>
+            <p>I craft immersive digital experiences with clean code and bold design. Turning ideas into high-performance, visually stunning products.</p>
+            <div class="hero-btns">
+                <a href="#portfolio" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-outline">Let's Talk
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="hero-avatar">
+                <img src="images/logo/im.jpg" alt="ImBrave" class="avatar-img">
+            </div>
+        </div>
+
+        <div class="scroll-line">Scroll to explore</div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about">
+        <div class="about-header">
+            <div class="section-tag reveal">About Me</div>
+            <h2 class="section-title reveal">Who Is <span style="color:var(--gold)">ImBrave</span>?</h2>
+            <p class="section-sub reveal">A full-stack developer and UI/UX designer who turns ideas into bold, high-performing digital products.</p>
+        </div>
+
+        <!-- STEPPER -->
+        <div class="stepper">
+
+            <div class="step reveal">
+                <div class="step-left">
+                    <div class="step-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                    <div class="step-year">2021</div>
+                    <h3 class="step-title">Started the Journey</h3>
+                    <p class="step-desc">Dove into web development — learning HTML, CSS, and JavaScript from scratch. Built my first projects and fell in love with the craft of turning code into visual experiences.</p>
+                    <div class="step-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step reveal">
+                <div class="step-left">
+                    <div class="step-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                    <div class="step-year">2022</div>
+                    <h3 class="step-title">Mastered Modern Frameworks</h3>
+                    <p class="step-desc">Leveled up with React, Next.js, and Node.js. Started building full-stack applications and took on my first freelance clients, delivering production-ready products.</p>
+                    <div class="step-tags">
+                        <span>React</span><span>Next.js</span><span>Node.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step reveal">
+                <div class="step-left">
+                    <div class="step-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    </div>
+                    <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                    <div class="step-year">2023</div>
+                    <h3 class="step-title">Embraced UI/UX Design</h3>
+                    <p class="step-desc">Combined development skills with design thinking using Figma. Began crafting user-centred interfaces with attention to accessibility, micro-interactions, and visual identity.</p>
+                    <div class="step-tags">
+                        <span>Figma</span><span>UI/UX</span><span>Design Systems</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step reveal">
+                <div class="step-left">
+                    <div class="step-icon active-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                </div>
+                <div class="step-content">
+                    <div class="step-year active-year">Now · 2024–25</div>
+                    <h3 class="step-title">Freelancing Full-Time</h3>
+                    <p class="step-desc">Working with clients worldwide to build polished digital products — from SaaS dashboards to agency portfolios. Focused on performance, scalability, and beautiful design.</p>
+                    <div class="step-tags">
+                        <span>Full-Stack</span><span>Freelance</span><span>50+ Projects</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section id="services">
+        <div class="services-header">
+            <div>
+                <div class="section-tag reveal">What I Do</div>
+                <h2 class="section-title reveal">Services I<br><span style="color:var(--gold)">Offer</span></h2>
+            </div>
+            <p class="section-sub reveal">From concept to deployment — I handle the full lifecycle of your digital product.</p>
+        </div>
+        <div class="services-grid">
+
+            <div class="service-card reveal">
+                <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="10" r="3"/><path d="M7 20.662V19a2 2 0 012-2h6a2 2 0 012 2v1.662"/></svg>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Designing intuitive interfaces and memorable user experiences grounded in research and creative vision.</p>
+                <div class="service-num">01</div>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <h3>Web Development</h3>
+                <p>Building fast, responsive websites and web apps using modern frameworks like React, Next.js, and Node.js.</p>
+                <div class="service-num">02</div>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                </div>
+                <h3>Mobile-First Design</h3>
+                <p>Every product I build is optimized for all screen sizes, ensuring a seamless experience everywhere.</p>
+                <div class="service-num">03</div>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </div>
+                <h3>Performance Optimization</h3>
+                <p>Analyzing and boosting website speed, SEO rankings, and core web vitals for maximum impact.</p>
+                <div class="service-num">04</div>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                </div>
+                <h3>API Integration</h3>
+                <p>Connecting your app to third-party services, payment gateways, and custom RESTful or GraphQL APIs.</p>
+                <div class="service-num">05</div>
+            </div>
+
+            <div class="service-card reveal">
+                <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3>Maintenance & Support</h3>
+                <p>Ongoing updates, security patches, and technical support to keep your product running at peak performance.</p>
+                <div class="service-num">06</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== PORTFOLIO ===================== -->
+    <section id="portfolio">
+        <div class="portfolio-header">
+            <div>
+                <div class="section-tag reveal">My Work</div>
+                <h2 class="section-title reveal">Featured <span style="color:var(--gold)">Projects</span></h2>
+            </div>
+            <a href="#" class="btn-outline reveal">
+                View All
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+
+        <!-- PORTFOLIO STEPPER -->
+        <div class="port-stepper">
+
+            <div class="port-step reveal">
+                <div class="port-step-left">
+                    <div class="port-step-node">01</div>
+                    <div class="port-step-line"></div>
+                </div>
+                <div class="port-step-card">
+                    <div class="port-step-mock">
+                        <div class="mock-glow"></div>
+                        <span>DASH</span>
+                    </div>
+                    <div class="port-step-info">
+                        <div class="port-step-cat">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            Web Development
+                        </div>
+                        <h3 class="port-step-title">Analytics Dashboard</h3>
+                        <p class="port-step-desc">A real-time data analytics platform with interactive charts, custom filters, and role-based access control. Built for performance at scale.</p>
+                        <div class="port-step-tech">
+                            <span>React</span><span>Node.js</span><span>Chart.js</span><span>PostgreSQL</span>
+                        </div>
+                        <a href="#" class="port-step-link">
+                            View Project
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-step reveal">
+                <div class="port-step-left">
+                    <div class="port-step-node">02</div>
+                    <div class="port-step-line"></div>
+                </div>
+                <div class="port-step-card port-step-card--reverse">
+                    <div class="port-step-mock mock-alt">
+                        <div class="mock-glow"></div>
+                        <span>ECOM</span>
+                    </div>
+                    <div class="port-step-info">
+                        <div class="port-step-cat">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="10" r="3"/><path d="M7 20.662V19a2 2 0 012-2h6a2 2 0 012 2v1.662"/></svg>
+                            UI/UX Design
+                        </div>
+                        <h3 class="port-step-title">E-Commerce Platform</h3>
+                        <p class="port-step-desc">Full-featured online store with product management, cart system, Stripe payments, and a sleek storefront designed for conversion.</p>
+                        <div class="port-step-tech">
+                            <span>Next.js</span><span>Tailwind</span><span>Stripe</span><span>Figma</span>
+                        </div>
+                        <a href="#" class="port-step-link">
+                            View Project
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-step reveal">
+                <div class="port-step-left">
+                    <div class="port-step-node">03</div>
+                    <div class="port-step-line"></div>
+                </div>
+                <div class="port-step-card">
+                    <div class="port-step-mock mock-alt2">
+                        <div class="mock-glow"></div>
+                        <span>APP</span>
+                    </div>
+                    <div class="port-step-info">
+                        <div class="port-step-cat">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                            Development
+                        </div>
+                        <h3 class="port-step-title">Productivity Mobile App</h3>
+                        <p class="port-step-desc">A cross-platform task management app with calendar sync, team collaboration, and smart reminders — designed mobile-first from the ground up.</p>
+                        <div class="port-step-tech">
+                            <span>React Native</span><span>Expo</span><span>Firebase</span>
+                        </div>
+                        <a href="#" class="port-step-link">
+                            View Project
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-step reveal">
+                <div class="port-step-left">
+                    <div class="port-step-node">04</div>
+                    <div class="port-step-line"></div>
+                </div>
+                <div class="port-step-card port-step-card--reverse">
+                    <div class="port-step-mock mock-alt3">
+                        <div class="mock-glow"></div>
+                        <span>SaaS</span>
+                    </div>
+                    <div class="port-step-info">
+                        <div class="port-step-cat">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            Web Design
+                        </div>
+                        <h3 class="port-step-title">SaaS Landing Page</h3>
+                        <p class="port-step-desc">High-converting marketing site for a B2B SaaS product — with animated sections, pricing tiers, testimonials, and optimised for SEO and speed.</p>
+                        <div class="port-step-tech">
+                            <span>Next.js</span><span>Framer Motion</span><span>Figma</span>
+                        </div>
+                        <a href="#" class="port-step-link">
+                            View Project
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-step reveal">
+                <div class="port-step-left">
+                    <div class="port-step-node port-step-node--last">05</div>
+                </div>
+                <div class="port-step-card">
+                    <div class="port-step-mock mock-alt4">
+                        <div class="mock-glow"></div>
+                        <span>PORT</span>
+                    </div>
+                    <div class="port-step-info">
+                        <div class="port-step-cat">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                            UI/UX Design
+                        </div>
+                        <h3 class="port-step-title">Agency Portfolio</h3>
+                        <p class="port-step-desc">Bold, immersive portfolio for a creative agency — featuring custom cursor, scroll animations, project case studies, and a dramatic dark aesthetic.</p>
+                        <div class="port-step-tech">
+                            <span>HTML/CSS</span><span>GSAP</span><span>Three.js</span>
+                        </div>
+                        <a href="#" class="port-step-link">
+                            View Project
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact">
+        <div class="section-tag reveal">Get In Touch</div>
+        <h2 class="section-title reveal">Let's Work<br><span style="color:var(--gold)">Together</span></h2>
+        <div class="contact-grid">
+            <div>
+                <div class="contact-info">
+                    <h3 class="reveal">Have a project in mind?</h3>
+                    <p class="reveal">Whether you need a website, redesign, or full-stack development — I'm here to make it happen. Reach out and let's build something great.</p>
+                    <div class="contact-items">
+                        <div class="contact-item reveal">
+                            <div class="contact-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div class="contact-detail">
+                                <strong>Email</strong>
+                                hello@imbrave.dev
+                            </div>
+                        </div>
+                        <div class="contact-item reveal">
+                            <div class="contact-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div class="contact-detail">
+                                <strong>Location</strong>
+                                Available Worldwide (Remote)
+                            </div>
+                        </div>
+                        <div class="contact-item reveal">
+                            <div class="contact-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div class="contact-detail">
+                                <strong>Response Time</strong>
+                                Within 24 hours
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links reveal">
+                    <a href="#" class="social-link" title="Twitter/X">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="#" class="social-link" title="GitHub">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" title="Dribbble">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-form reveal">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" placeholder="John">
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Doe">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Service Needed</label>
+                    <select>
+                        <option value="">Select a service...</option>
+                        <option>UI/UX Design</option>
+                        <option>Web Development</option>
+                        <option>Mobile-First Design</option>
+                        <option>Performance Optimization</option>
+                        <option>API Integration</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Your Message</label>
+                    <textarea placeholder="Tell me about your project..."></textarea>
+                </div>
+                <button class="submit-btn">
+                    Send Message
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo-img">
+                    <div class="logo-icon">IB</div>
+                    <span>IM<b>BRAVE</b></span>
+                </div>
+                <p>Building bold digital products with clean code, creative design, and relentless attention to detail.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="Twitter/X">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="#" class="social-link" title="GitHub">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" title="Dribbble">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <a href="#">UI/UX Design</a>
+                <a href="#">Web Development</a>
+                <a href="#">Mobile Design</a>
+                <a href="#">API Integration</a>
+                <a href="#">Maintenance</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <a href="mailto:hello@imbrave.dev">hello@imbrave.dev</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">Twitter/X</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 <b>IMBRAVE</b>. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
